@@ -23,7 +23,7 @@ function employeeReport(employee) {
   var salary = parseInt(employee.salary);
   var rating = employee.rating;
   var bonus = 0;
-  
+
   output[0] = employeeName;
 
   bonus = calcBonus(rating, employeeId, salary);
@@ -44,10 +44,10 @@ function calcBonus(rating, id, salary) {
       bonus = 0.1;
       break;
     case 4:
-      bonus = 0.6;
+      bonus = 0.06;
       break;
     case 3:
-      bonus = 0.4;
+      bonus = 0.04;
       break;
     default:
       bonus = 0;
